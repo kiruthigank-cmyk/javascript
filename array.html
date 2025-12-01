@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            var arr=[10,40,10,50,11,19,13,41,55,99];
+            var len=arr.length;
+            var h=0; //for finding biggest no.
+            for(var i=0;i<len;i++)
+        {
+            if(h<arr[i-1])
+            h=arr[i];
+            //if(arr[i]%2==0) //for even
+            
+            //if(arr[i]%2==1) for odd
+            document.getElementById("res").innerHTML+="<br>"+arr[i];
+        }
+        document.getElementById("res2").innerHTML="biggest no"+h;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">click me</button>
+    <div id="res"></div>
+    <div id="res2"></div>
+</body>
+</html>
