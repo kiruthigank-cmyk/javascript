@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var stud={
+            rno:1001,
+            sname:"kiruthiga",
+            marks:[99,100,70,98,92],
+            workplace:{
+                place1:"chennai",
+                place2:"karur",
+                place3:"lalapettai"
+            }
+        }
+         
+        document.write("<br>Student rno:"+stud.rno);
+        document.write(`<br>Student name:${stud.sname}`);
+        var len=stud.marks.length;
+        for(var i=0;i<len;i++)// for(var z in stud.marks)
+        {
+            document.write(`<br>mark:${i+1}=${stud.marks[i]}`)
+        }
+        // document.write("<br>Student mark:"+stud.mark[0]);
+        // document.write("<br>Student mark:"+stud.mark[1]);
+        // document.write("<br>Student mark:"+stud.mark[2]);
+        // document.write("<br>Student mark:"+stud.mark[3]);
+        // document.write("<br>Student mark:"+stud.mark[4]);
+        // document.write("<br>student workplace:"+ stud.workplace.place1);
+        // document.write("<br>student workplace:"+ stud.workplace.place2);
+        // document.write("<br>student workplace:"+ stud.workplace.place3);
+       for(var s in stud.workplace)
+       {
+        document.write(`<br>${s}=${stud.workplace[s]}`)
+       }
+       document.write(`<br>`+stud.marks.sort((a,b)=>a-b)); //ascending order
+       document.write(`<br>`+stud.marks.sort((a,b)=>b-a)); //descending order
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

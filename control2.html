@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        findres=()=>
+    {
+        var m1=parseFloat(document.getElementById("t1").value);
+        if(m1 >=85)
+    {
+        document.getElementById("ans").innerHTML=`<h1>${m1} : outstanding</h1>`;
+    }
+    else if(m1>=75)
+        {
+            document.getElementById("ans").innerHTML=`<h1>${m1} : Excellent</h1>`;
+        }
+     else if(m1>=65)
+        {
+            document.getElementById("ans").innerHTML=`<h1>${m1} : very good</h1>`;
+        }
+    else if(m1>=55)
+        {
+            document.getElementById("ans").innerHTML=`<h1>${m1} : Good</h1>`;
+        }
+    else{
+        document.getElementById("ans").innerHTML=`<h1>${m1}: below avg</h1>`;
+    }
+    }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter mark">
+    <br>
+    <input type="button" onclick="findres()" value="result">
+    <div id="ans"></div>
+</body>
+</html>

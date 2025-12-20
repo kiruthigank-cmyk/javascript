@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            var s=parseInt(document.getElementById("t1").value);
+            var e=parseInt(document.getElementById("t2").value);
+            do
+            {
+                document.getElementById("res").innerHTML+=(s+" ");
+                s=s+1;
+            }
+            while(s<=e);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter startnumber"><br>
+    <input type="text" id="t2" placeholder="Enter startnumber"><br>
+    <input type="button" onclick="show()" value="result">
+    <div id="res"></div>
+    
+</body>
+</html>

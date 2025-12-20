@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *
+        {
+            text-decoration: none;
+            margin:0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        html
+        {
+            scroll-snap-type:mandatory;
+            scroll-behavior: smooth;
+        }
+        nav
+        {
+            background-color: #fbaaff;
+            display: flex;
+            width: 100%;
+            height: 40px;
+            
+            /* justify-content: space-between;         */
+            /* align-content: center; */
+            align-items: center;
+            /* padding:20px; */
+            word-spacing: 20px;
+            gap: 120px;
+            position: fixed;
+            /* padding:20px; */
+            /* margin-left: 20px; */
+
+        }
+        p
+        {
+            font-size: 35px;
+        }
+        .logo
+        {
+            margin-left: 20px;            
+        }
+        .menu a:hover
+        {
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            padding:6px;
+        }
+        #academy
+        {
+            color:red;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-left: 5px;
+        }
+        div p
+        {
+            text-align: justify;
+            padding:40px;
+        }
+        #four
+        {
+            background-color: orange;
+            position: relative;
+            top:50px;
+            animation-name: gowtham;
+            animation-duration: 2.25s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes gowtham {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(359deg);
+                /* transform: scale(.9,.3); */
+            }
+        }
+        #two
+        {
+            background-color: yellow;
+        }
+        #three
+        {
+            background-color: blue;
+        }
+        #one
+        {
+            background-color: pink;
+        }
+        #five
+        {
+            background-color: blueviolet;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="google.png" width="50px">
+            <span>KIRUTHIKA<span id="academy">Academy</span></span>
+
+            </div>
+        <div class="menu">
+            <a href="#one">menu1</a>
+            <a href="#two">menu2</a>
+            <a href="#three">menu3</a>
+            <a href="#four">menu4</a>
+            <a href="#five">menu5</a>
+        </div>
+    </nav>
+    <div id="one">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsum ad asperiores, velit quam voluptatum, atque sint nisi magnam explicabo harum. Sequi magnam omnis quod maxime sunt veritatis, quasi temporibus
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet assumenda suscipit! Accusantium quia sed ipsam! Magnam itaque eum, omnis totam exercitationem tempora, delectus quisquam nam, soluta ratione ut. Dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex similique odit sed adipisci incidunt soluta optio quaerat. Accusantium maiores error et delectus. Tempore iusto excepturi deleniti cum repudiandae laboriosam..</p>
+        </div>
+<div id="two">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsum ad asperiores, velit quam voluptatum, atque sint nisi magnam explicabo harum. Sequi magnam omnis quod maxime sunt veritatis, quasi temporibus
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet assumenda suscipit! Accusantium quia sed ipsam! Magnam itaque eum, omnis totam exercitationem tempora, delectus quisquam nam, soluta ratione ut. Dolores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex similique odit sed adipisci incidunt soluta optio quaerat. Accusantium maiores error et delectus. Tempore iusto excepturi deleniti cum repudiandae laboriosam..</p>
+    </div>
+    <div id="three">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsum ad asperiores, velit quam voluptatum, atque sint nisi magnam explicabo harum. Sequi magnam omnis quod maxime sunt veritatis, quasi temporibus
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet assumenda suscipit! Accusantium quia sed ipsam! Magnam itaque eum, omnis totam exercitationem tempora, delectus quisquam nam, soluta ratione ut. Dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex similique odit sed adipisci incidunt soluta optio quaerat. Accusantium maiores error et delectus. Tempore iusto excepturi deleniti cum repudiandae laboriosam..</p>
+        </div>
+        <div id="four">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsum ad asperiores, velit quam voluptatum, atque sint nisi magnam explicabo harum. Sequi magnam omnis quod maxime sunt veritatis, quasi temporibus
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet assumenda suscipit! Accusantium quia sed ipsam! Magnam itaque eum, omnis totam exercitationem tempora, delectus quisquam nam, soluta ratione ut. Dolores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex similique odit sed adipisci incidunt soluta optio quaerat. Accusantium maiores error et delectus. Tempore iusto excepturi deleniti cum repudiandae laboriosam..</p>
+            </div>
+            <div id="five">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsum ad asperiores, velit quam voluptatum, atque sint nisi magnam explicabo harum. Sequi magnam omnis quod maxime sunt veritatis, quasi temporibus
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet assumenda suscipit! Accusantium quia sed ipsam! Magnam itaque eum, omnis totam exercitationem tempora, delectus quisquam nam, soluta ratione ut. Dolores.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex similique odit sed adipisci incidunt soluta optio quaerat. Accusantium maiores error et delectus. Tempore iusto excepturi deleniti cum repudiandae laboriosam..</p>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br>     
+        
+        
+
+    </body>
+</html>

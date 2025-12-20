@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function amulupromise(){
+            return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                let msg=true; //false
+                if(msg===true)
+                resolve("success message");
+                else
+                reject("failure message");
+            },4000)
+            });
+        }
+        //promise:way1
+        /*amulupromise().then((data)=>{
+            console.log(data);
+        }).catch((err)=>{
+            console.error(err);
+        })*/
+        async function amuluasync()
+        {
+            try{
+                let data=await amulupromise();
+                console.log(data)
+               }
+               catch(err){
+                console.error(err)
+               }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="amuluasync()">click message</button>
+</body>
+</html>
